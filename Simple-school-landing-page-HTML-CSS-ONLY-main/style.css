@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-image: url('./school website/schoolfont.jpg');
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  background-color: #5a4c4cbd;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100vw;
+  background: #00000075;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.8px);
+  -webkit-backdrop-filter: blur(9.8px);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+#logo {
+  margin-left: 40px;
+  width: 70px;
+  height: 70px;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+nav ul li {
+  margin: auto 26px;
+}
+
+nav ul li a {
+  color: #f6eeee;
+  font-size: 15px;
+  font-family: 'Braah One', sans-serif;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+
+nav ul li a:hover {
+  color: #1eebeb;
+}
+
+.content {
+  width: 55%;
+  height: 86vh;
+  display: flex;
+  align-items: center;
+  padding-left: 42px;
+}
+
+h1 {
+  font-size: 47px;
+  font-family: 'Braah One', sans-serif;
+  color: white;
+}
+
+#sec_h1 {
+  color: #d6d60a;
+}
+
+#sec_h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  color: white;
+  margin: 0px 0px 50px 0px;
+  transition: transform 0.5s ease;
+}
+
+#sec_h2:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+pre {
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+  color: #ffffff;
+  transition: transform 0.8s ease;
+}
+
+pre:hover {
+  transform: scale(1.005);
+  cursor: pointer;
+}
+
+.button {
+  color: black;
+  display: block;
+  width: 172px;
+  font-size: 19px;
+  padding: auto;
+  height: 50px;
+  margin-top: 25px;
+  background-color: #d6d60a;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 0px 34px;
+  transition: all 0.5s;
+  font-family: 'Kanit', sans-serif;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#Achievement {
+  display: inline-block;
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Kanit', sans-serif;
+  top: 104px;
+  right: 55px;
+
+}
+
+h3 {
+  transition: font-size 0.8s ease;
+}
+
+h3:nth-child(even) {
+  color: white;
+}
+
+h3:nth-child(odd) {
+  color: #b7ff21;
+}
+
+h3:hover {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.Ach_head {
+  color: burlywood;
+  text-decoration: underline;
+  font-family: 'Kanit', sans-serif;
+  font-size: 25px;
+  margin-bottom: 11px;
+}
+
+/* links */
+span.link {
+  display: inline-flex;
+  position: relative;
+  bottom: 41px;
+  left: 33px;
+}
+
+span.link img {
+  width: 20px;
+  margin: 0px 12px;
+  transition: transform 0.8s easein;
+}
+
+span.link img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Apply the animation to the text */
+h1 {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slide-in 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.animate:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.animate:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.animate:nth-child(3) {
+  animation-delay: 0.7s;
+}
+
+.animate:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.animate:nth-child(5) {
+  animation-delay: 1s;
+}
+
+/* about us*/
+#About_us {
+  background-color: white;
+}
+
+#getintouch {
+  font-family: 'Kanit', sans-serif;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  color: brown;
+  text-decoration: underline;
+
+}
+
+#knowmore p {
+  font-family: 'Kanit', sans-serif;
+  font-size: 24px;
+
+}
+
+#info p {
+  font-family: 'Kanit', sans-serif;
+  margin: 2px 6px;
+}
+
+#content {
+  display: flex;
+  padding: 10px 80px;
+}
+
+#main_section {
+  margin-left: 56px;
+}
+
+input {
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.input {
+  border: none;
+  height: 35px;
+  margin: 7px 3px;
+  padding: 3px;
+  padding-left: 13px;
+  background-color: #EDEDED;
+}
+
+#name {
+  width: 70.5%;
+  margin-bottom: 0px;
+}
+
+#Email {
+  width: 32.5%;
+}
+
+#Phone_number {
+  width: 34%
+}
+
+textarea {
+  margin-top: 2px;
+  margin-left: 4px;
+  padding: 9px 9px;
+  border: none;
+  resize: none;
+  height: 160px;
+  width: 70.5%;
+  background-color: #EDEDED;
+  border-radius: 5px;
+}
+
+#submit {
+  height: 34px;
+  border: none;
+  border-radius: 5px;
+  color: #EDEDED;
+  background: #4f6969;
+  display: block;
+  margin-left: 4px;
+  margin-top: 4px;
+  font-family: 'Kanit', sans-serif;
+  width: 73.8%;
+  transition-duration: 0.4s;
+}
+
+button#submit:hover {
+  background-color: #4a5e5e;
+  cursor: pointer;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.info_list {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+input::placeholder {
+  font: 15px/3 sans-serif;
+}
+
+/* footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 4vh;
+  color: azure;
+  font-family: 'Braah One', sans-serif;
+}
